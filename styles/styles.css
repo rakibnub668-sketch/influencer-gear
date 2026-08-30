@@ -1,0 +1,167 @@
+/* Fonts */
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* Shared Styles */
+main > section{
+  margin-top: 100px;
+}
+.btn{
+  color: white;
+  background-color: rgba(224, 44, 109, 1);
+   cursor: pointer;
+}
+.primary-color{
+  color: #3A3A3A;
+}
+.product-name{
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(24, 25, 31, 1);
+}
+.product-price{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+}
+.product-description{
+  color: rgba(120, 120, 133, 1);
+}
+.display-flex{
+  display: flex;
+}
+
+
+/* Header styles */
+
+.nav-bar{
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 120px 50px 120px;
+
+}
+.brand{
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-links{
+ gap: 34px;
+}
+.nav-item{
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Journey Section styles */
+.journey-container{
+  gap: 130px;
+  justify-content: space-around;
+  align-items: center;
+}
+.journey-content{
+  width: 582px;
+  height: 270px;
+
+}
+.journey-title{
+  font-size: 52px;
+  font-weight: 700;
+}
+.journey-description{
+  font-size: 16;
+  font-weight: 600;
+}
+.book-btn{
+  border-radius: 41px;
+  padding: 10px 24px;
+  font-weight: 700;
+  border: none;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+#arrow{
+  font-size: 24x;
+}
+
+.header-img{
+  position: relative;
+}
+.camera-bg{
+position: absolute;
+z-index: -1;
+}
+
+.hide{
+  display: none;
+}
+/* Media Query */
+@media screen and (max-width: 576px) {
+  .nav-bar{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .brand{
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .nav-links{
+    padding: 0;
+    margin: 15px auto 0 auto;
+    gap: 10px;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .nav-link{
+    font-size: 12px;
+  }
+  .journey-container{
+    flex-direction: column-reverse;
+  }
+  .header-img{
+    width: 257px;
+    height: 257px;
+    margin-top: 50px;
+  }
+  .main-camera{
+    width: 100%;
+    height: 100%;
+  }
+  .camera-bg{
+    width: 100%;
+    height: 100%;
+  }
+  .journey-container{
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .journey-content{
+    height: 222px;
+    width: 400px;
+    text-align: center;
+  }
+  .journey-title{
+    font-size: 28px;
+  }
+  .journey-description{
+    font-size: 14px;
+    margin: 20px;
+   
+  }
+
+}
