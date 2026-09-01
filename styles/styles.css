@@ -10,133 +10,129 @@
   font-style: normal;
 }
 
-/* Shared Styles */
-main > section{
+/* Shared styles */
+section{
   margin-top: 100px;
+}
+.display-flex{
+  display: flex;
+}
+.primary-color{
+  color: rgba(58, 58, 58, 1);
 }
 .btn{
   color: white;
   background-color: rgba(224, 44, 109, 1);
-   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
 }
-
-.display-flex{
-  display: flex;
-}
-
-
 /* Header styles */
-
+/* nav-styles */
 .nav-bar{
   justify-content: space-between;
   align-items: center;
-  margin: 80px 120px 50px 120px;
-
+  margin: 50px 120px 50px 120px;
 }
 .brand{
-  font-size: 24px;
-  font-weight: 700;
+font-size: 24px;
+font-weight: 700;
+  color: rgba(58, 58, 58, 1);
 }
-.nav-links{
- gap: 34px;
+.nav-link{
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+ 
 }
 .nav-item{
   list-style: none;
 }
-.nav-link{
+.nav-links{
   text-decoration: none;
-  color: #3A3A3A;
-  font-size: 16px;
-  font-weight: 600;
+   color: rgba(58, 58, 58, 1);
+
 }
-/* Journey Section styles */
+/* Main related styles */
+/* journey section styles */
 .journey-container{
-  gap: 130px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 133px;
 }
 .journey-content{
-  width: 582px;
-  height: 270px;
-
+width: 582px;
+height: 270px;
 }
 .journey-title{
   font-size: 52px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .journey-description{
-  font-size: 16;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .book-btn{
   border-radius: 41px;
-  padding: 10px 24px;
-  font-weight: 700;
-  border: none;
+  margin-top: 0;
   display: inline-flex;
   gap: 8px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-#arrow{
-  font-size: 24x;
-}
-
-.header-img{
+.journey-img-container{
   position: relative;
+ width: 475px;
+ height: 475px;
 }
 .camera-bg{
 position: absolute;
 z-index: -1;
 }
-/* E-commerce section Styles */
-.e-commerce-img-container{
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 60px;
-  width: 1110px;
-  height: 110px;
+.main-camera{
+  position: absolute;
+}
+
+/* E-commerce section styles */
+.e-commerce-container {
   justify-content: center;
   align-items: center;
-  padding: 35px 62px;
-  margin: 0 auto;
+  gap: 60px;
 }
-/* Collection Section 
-styles */
+
+/* Collection styles */
 
 
 .collection-title{
-  font-size: 28px;
+  font-size: 28;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.collection-card-container{
+.card-container{
+  width: 1050px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 40px;
-  margin-left: 120px;
-  margin-right: 120px;
-  width: 1040px;
-  justify-items: center;
-  margin: 0 auto;
-  
- 
+ gap: 40px;
+ margin: 0 auto;
+justify-items: center;
 }
 .card{
-  width: 329px;
-  padding: 17px 14px;
+  width: 330px;
+  height: 475px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  padding: 17px 14px;
+  box-sizing: border-box;
   border-radius: 5px;
-  transition: transform .3s linear;
-
+  transition: transform .5s;
 }
 .product-img{
-  width: 100% ;
-}
-.primary-color{
-  color: #3A3A3A;
+  width: 100%;
 }
 .product-name{
   font-size: 28px;
@@ -145,129 +141,222 @@ styles */
   margin-bottom: 0;
 }
 .product-price{
-  color: rgba(0, 0, 0, 0.87);
   font-size: 24px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .product-description{
-  color: rgba(120, 120, 133, 1);
   font-size: 14px;
+  font-weight: 700;
+  color: rgba(120, 120, 133, 1);
   margin-top: 0;
+}
+.see-btn{
+  grid-column: 1/-1;
+  font-weight: bold;
+  justify-self: end;
+  background: none;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+   color: rgba(224, 44, 109, 1);
 }
 .card:hover{
   transform: scale(1.1);
 }
 
-.see-btn{
-/* grid-column: 1/4; */
-grid-column: 1/-1;
-justify-self: end;
-border: none;
-color: rgba(224, 44, 109, 0.87);
-background: none;
-font-weight: 700;
-display: inline-flex;
-gap: 8px;
-justify-content: center;
-align-items: center;
-margin-right: 20px;
 
+/* Feature section styles */
+.feature-container{
+  width: 1110px;
+  height: 270px;
+  gap: 96px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
+.feature-title{
+  font-size: 38px;
+  font-weight: 700;
+  color: rgba(10, 8, 38, 1);
+}
+.join-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.feature-description{
+  color: rgba(108, 108, 108, 1);
+  font-weight: 700;
+}
 
+/* footer styles */
+.footer{
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+  background-color: rgba(10, 8, 38, 1);
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container{
 
-/* Media Query */
+  height: 250px;
+  width: 500px;
+  
+}
+.footer-title{
+  color: white;
+}
+.copy-right{
+  color: rgb(236, 220, 220);line-height: 200%;
+}
+/* Media query for smaller devices */
 .hide{
   display: none;
 }
+
 @media screen and (max-width: 576px) {
   main > section{
     margin-top: 50px;
+    margin-bottom: 0;
   }
   .nav-bar{
     flex-direction: column;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 5px;
+
   }
   .brand{
     font-size: 16px;
     margin-bottom: 0;
   }
-  .nav-links{
-    padding: 0;
-    margin: 15px auto 0 auto;
+  .nav-link{
     gap: 10px;
     justify-content: space-between;
-    width: 90%;
+    margin: 5px auto 0 auto;
+    padding: 0;
+    width: 80%;
   }
-  .nav-link{
+  .nav-links{
     font-size: 12px;
   }
   .journey-container{
     flex-direction: column-reverse;
-    gap: 14px;
+    gap: 15px;
+   
   }
-  .header-img{
+  .journey-img-container{
     width: 257px;
     height: 257px;
-    margin-top: 50px;
+   
   }
   .main-camera{
     width: 100%;
     height: 100%;
   }
-  .camera-bg{
+.camera-bg{
     width: 100%;
     height: 100%;
-  }
-  .journey-content{
-    height: 222px;
-    width: 400px;
-    text-align: center;
-  }
-  .journey-title{
-    font-size: 28px;
-  }
-  .journey-description{
-    font-size: 14px;
-    margin: 20px;
-   
-  }
-  .e-commerce-img-container{
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: 60px;
-    gap: 0px;
-    padding: 0;
-  }
-  .e-commerce-link{
-    display: flex;
-    width: calc(25% - 20px);
-    justify-content: center;
-    align-items: center;
-  }
-  .e-commerce-img{
-    width: 30px;
-    height: auto;
-  }
-  .collection-title{
-    margin-bottom: 20px;
-    font-size: 16px;
+}
+.journey-content{
+  width: calc(100% - 20px);
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  height: auto;
+}
+.journey-title{
+  font-size: 28px;
 
-  }
-  .collection-card-container{
-    margin: 0 auto;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .see-btn{
-    justify-self: start;
-    margin-left: 20px;
-  }
+}
+.journey-description{
+  font-size: 14px;
+}
 
+.e-commerce-container{
+  flex-wrap: wrap;
+  gap: 22px;
+  width: 275px;
+  height: 62px;
+  margin: 0 auto;
+}
+.e-commerce-link{
+  width: calc(25% - 20px);
+}
+.e-commerce-img{
+  width: 34px;
+  height: auto;
+}
+.collection-title{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card-container{
+  grid-template-columns: 1fr;
+  width: 330px;
+  gap: 10px;
+}
+.product-img{
+  margin-bottom: 0;
+}
+.product-name{
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.product-price{
+  font-weight: 700;
+  margin-top: 0;
+}
+.feature-container{
+  flex-direction: column-reverse;
+}
+.feature-container{
+  width: 100%;
+  height: auto;
+}
+.feature-content{
+  width: 90%;
+  text-align: center;
+}
+.feature-img-container{
+  width: 300px;
+}
+.feature-img{
+  width: 100%;
+}
+.feature-title{
+  font-size: 24px;
+}
+.footer{
+  height: 215px;
+}
+.footer-container{
 
+  height: 180px;
+  width: 80%;
+  
+}
+.footer-title{
+  font-size: 16px;
+
+}
+.copy-right{
+  font-size: 12px;
+}
+.icon{
+ font-size: 15px;
+}
 }
